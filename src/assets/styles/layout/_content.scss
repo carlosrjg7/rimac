@@ -1,0 +1,13 @@
+.content{
+
+    @include md{
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-column-start: span 12;
+        grid-column-end: span 12;
+        padding: 40px 120px 80px;
+        grid-column-gap: 32px;
+        column-gap: 32px;
+    }
+}

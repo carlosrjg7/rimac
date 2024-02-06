@@ -1,0 +1,27 @@
+.content {
+  @include xl {
+    max-width: 1366px !important;
+    margin: 0 auto !important;
+    height: calc(100vh - 182px);
+  }
+}
+
+.br-full {
+  input {
+    border-radius: 8px 8px 8px 8px !important;
+  }
+  // border: 1px solid #5E6488;
+}
+
+.error_msg {
+  margin-top: 8px !important;
+  font-family: 'BRSonoma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ff1a1c;
+  display: block;
+  margin: 4px 0 0 0;
+  text-align: left;
+}

@@ -1,0 +1,115 @@
+.form_login {
+  width: 100%;
+  // background: #000;
+  margin-top: 8px;
+
+  &_container {
+    &_input {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+      outline: 0;
+      color: #141938;
+      padding: 16px 0 0;
+    }
+
+    &_checkbox {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #a3abcc;
+      display: flex;
+      user-select: none;
+      flex-direction: column;
+      margin-top: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > div {
+        display: flex;
+      }
+
+      .checkbox {
+        display: flex;
+
+        input[type='checkbox'] + div label {
+          display: inline-block;
+          cursor: pointer;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          color: #676f8f;
+
+          &::before {
+            content: '';
+            vertical-align: bottom;
+            color: transparent;
+            font-size: 8px;
+            transition: 0.2s;
+            display: inline-block;
+            background-image: url("data:image/svg + xml,%3Csvgwidth='17'height='16'viewBox='0 0 17 16'fill='none'xmlns='http://www.w3.org/2000/svg'%3E%3Cpathd='M6.49992 12.4149L2.79492 8.70492L4.20493 7.29492L6.49992 9.58492L12.5449 3.54492L13.9549 4.95492L6.49992 12.4149Z'fill='white'/%3E%3C/svg%3E%0A");
+            background-size: 100%;
+            margin-right: 12px;
+            width: 18px !important;
+            height: 18px !important;
+            border-radius: 4px !important;
+            border: 1px solid #5e6488;
+          }
+
+          &:active {
+            // transform: translateY(-14px) scale(1);
+            font-size: 12px;
+            line-height: 16px;
+            color: #03050f !important;
+          }
+        }
+
+        input[type='checkbox']:checked + div label:before {
+          background-color: #03050f;
+          border-color: #03050f;
+          background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.49992 12.4149L2.79492 8.70492L4.20493 7.29492L6.49992 9.58492L12.5449 3.54492L13.9549 4.95492L6.49992 12.4149Z' fill='white'/%3E%3C/svg%3E%0A");
+          background-size: 100%;
+          margin-right: 12px;
+          width: 18px !important;
+          height: 18px !important;
+          border-radius: 4px !important;
+          border: 1px solid #5e6488;
+        }
+
+        & > .contents {
+          width: 100%;
+          display: flex;
+          align-items: flex-start !important;
+
+          p {
+            display: block;
+            font-family: 'BR_Sonoma_Regular', sans-serif;
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #03050f;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .tcc {
+    font-family: 'BR_Sonoma_Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #03050f;
+    margin: 16px 0;
+  }
+}

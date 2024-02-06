@@ -1,0 +1,190 @@
+.home {
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+    margin: 0 auto;
+
+    
+    grid-column-start: span 4;
+    grid-column-end: span 4;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 0 24px;
+    grid-column-gap: 16px;
+    column-gap: 16px;
+    box-sizing: border-box;
+    
+    
+
+  @include md{
+      grid-column-gap: 32px;
+      column-gap: 32px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-column-start: span 12;
+      grid-column-end: span 12;
+      margin: 0 auto;
+  }
+
+  &-bg {
+    background-color: #f8f9ff;
+    background: linear-gradient(
+      67deg,
+      rgb(131, 58, 180) 0%,
+      rgb(248, 249, 255) 18%,
+      rgb(248, 249, 255) 53%,
+      rgb(248, 249, 255) 86%,
+      rgb(0, 244, 226) 100%
+    );
+  }
+
+  &_hero {
+    &_container {
+      &-left {
+        display: none;
+
+        @include md{
+            display: grid;
+            grid-column-start: 2;
+            grid-column-end: 7;
+            position: relative;
+            padding: 0;
+            margin-left: -32px;
+            width: calc(100% + 32px);
+        }
+
+
+        .img-wrapper {
+          overflow: hidden;
+          border-radius: 24px;
+
+          .imgHome {
+            width: 100%;
+            height: 560px;
+            flex-shrink: 0;
+            display: none;
+            border-radius: 25px;
+            background: url("~/assets/img/imgHome.png"), lightgray 50% no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            @include md {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &-right {
+        grid-column-start: span 4;
+        grid-column-end: span 4;
+
+        @include lg{
+            grid-column-start: 8;
+            grid-column-end: 12;
+        }
+
+        .header_hero {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 24px;
+          
+          border-bottom: 1px solid #ccd1ee;
+          margin-top: 8px;
+          
+          @include md {
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0;
+            border-bottom: 0;
+          }
+
+          &_title {
+            margin: 0;
+            max-width: 176px;
+
+            @include md{
+                max-width: 100%;   
+            }
+
+            &_tagPromo {
+              border-radius: 0.25rem;
+              background: var(
+                --Gradients-Background-aqua-lemon,
+                linear-gradient(86deg, #00f4e2 0%, #00ff7f 100%)
+              );
+              color: var(--Grey-grey-100, #03050f);
+              font-family: "BR_Sonoma-Bold";
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 1rem;
+              letter-spacing: 0.025rem;
+              padding: 0.3rem 0.5rem;
+              white-space: nowrap;
+            }
+
+            &_text {
+              &-title {
+                color: var(--Grey-grey-100, #03050f);
+                font-feature-settings: "clig" off, "liga" off;
+                font-family: "BR_Sonoma-Bold";
+                font-size: 1.75rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2.25rem;
+
+                @include lg {
+                  color: var(--Grey-grey-100, #03050f);
+                  font-feature-settings: "clig" off, "liga" off;
+                  font-family: "BR_Sonoma-Bold";
+                  font-size: 2rem;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 2.5rem;
+                }
+              }
+
+              
+            }
+          }
+
+          .img-wrapper {
+            display: block;
+            overflow: hidden;
+
+            .imgHome {
+              width: 124px;
+              height: 146px;
+              flex-shrink: 0;
+              display: block;
+              border-radius: 16px;
+              background: url("~/assets/img/imgHome.png"),
+                lightgray 50% no-repeat;
+              background-position: center;
+              background-size: cover;
+
+              @include md {
+                display: none;
+              }
+            }
+          }
+        }
+        
+      }
+    }
+
+    &_text-p {
+      color: var(--Grey-grey-100, #03050f);
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "BR_Sonoma-Regular";
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      margin-top: 24px;
+    }
+  }
+}

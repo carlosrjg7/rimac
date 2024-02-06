@@ -1,0 +1,20 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import './base/fonts', './base/base';
+
+@import './abstracts/functions';
+@import './abstracts/mixins';
+
+@import './helpers/utils';
+
+@import './layout/header';
+@import './layout/content';
+@import './layout/footer';
+
+@import './pages/home';
+@import './pages/plans';
+
+@import './components/Login';
+@import './components/input';
+@import './components/button';
+@import './components/loading';

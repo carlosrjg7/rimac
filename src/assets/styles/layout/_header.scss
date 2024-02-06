@@ -1,0 +1,30 @@
+.header{
+    padding: 0.75rem 1.5rem;
+    @include md {
+        padding: 1.25rem 7.5rem;
+    }
+
+    .phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_text{
+            &-bold{
+                font-family: 'BR_Sonoma-Bold';
+                font-weight: 700;
+                font-size: 1.125rem;
+            }
+    
+            &-regular{
+                font-family: 'BR_Sonoma-Regular';
+                font-weight: 600;
+                font-size: 0.75rem;
+            }
+        }
+
+        img{
+            margin-left: 1rem;
+            margin-right: 0.5rem;
+        } 
+    }
+}

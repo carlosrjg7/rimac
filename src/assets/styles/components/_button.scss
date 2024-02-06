@@ -1,0 +1,28 @@
+.btn-hero {
+  width: 100%;
+  margin-top: 24px;
+  background-color: #03050f;
+  height: 56px !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  font-family: 'BRSonoma', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-transform: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  text-decoration: none !important;
+
+  &.mt-24 {
+    margin: 24px 0 24px 0;
+  }
+}

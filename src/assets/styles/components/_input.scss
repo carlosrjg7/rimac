@@ -1,0 +1,103 @@
+.input_field {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  outline: 0;
+  color: #141938;
+  width: 100%;
+  margin-top: 0;
+  min-height: inherit;
+  position: relative;
+  width: 100%;
+
+  &.select {
+    width: 90px;
+    margin-top: 0;
+    min-height: inherit;
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+
+    .customSelect {
+      font-family: 'BR_Sonoma_Regular', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #03050f;
+      background-color: #f8f9ff;
+      width: 90px;
+      height: 56px;
+      transition: all 0.3s;
+      padding: 0 16px;
+      border: 1px solid #5e6488;
+      border-right-width: 0;
+      outline: none;
+      border-right: 0;
+      border-radius: 8px 0px 0px 8px;
+    }
+  }
+}
+
+.input-custom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .input_field {
+    margin-top: 0;
+    min-height: inherit;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    input {
+      border-radius: 0px 8px 8px 0px;
+      border: 1px solid #5e6488;
+      padding: 20px 16px 0;
+      font-family: 'BRSonoma';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #03050f !important;
+      box-shadow: none;
+      background: #f8f9ff;
+      width: 100%;
+      height: 56px;
+
+      &:focus + label {
+        // transform: translateY(-14px) scale(1);
+        font-size: 12px;
+        line-height: 16px;
+        color: #03050f !important;
+        bottom: 32%;
+        font-family: 'BR_Sonoma_Regular', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+    label {
+      bottom: 32%;
+      font-family: 'BR_Sonoma_Regular', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #5e6488 !important;
+      left: 16px;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      cursor: text;
+      transition: transform 0.2s ease-out, color 0.2s ease-out;
+      transform-origin: 0% 100%;
+      text-align: initial;
+    }
+  }
+}
+
+.checkbox {
+  input[type='checkbox'] {
+    display: none;
+  }
+}
